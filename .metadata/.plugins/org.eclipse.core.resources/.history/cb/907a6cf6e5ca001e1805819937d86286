@@ -1,0 +1,17 @@
+package com.heesang.realEstate.dto.request;
+
+import com.heesang.realEstate.interfaces.Code;
+
+public class CheckIdRequestDto {
+
+	private Code code;
+	private String id;
+	
+	public String getId() {
+		return id;
+	}
+	
+	public void setId(String id) {
+		this.id = id;
+	}
+}

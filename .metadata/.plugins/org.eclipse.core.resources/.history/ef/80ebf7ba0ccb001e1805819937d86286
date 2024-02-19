@@ -1,0 +1,44 @@
+package com.heesang.realEstate.service.Implement;
+
+import com.heesang.realEstate.dto.request.CheckIdRequestDto;
+import com.heesang.realEstate.dto.response.CheckIdResponseDto;
+import com.heesang.realEstate.interfaces.Code;
+import com.heesang.realEstate.repository.UserRepository;
+import com.heesang.realEstate.repository.Implement.UserRepositoryImplement;
+import com.heesang.realEstate.service.AuthService;
+
+public class AuthServiceImplement implements AuthService {
+	
+//	private UserRepository userRepository = new UserRepositoryImplement();  // 내부에서 의존성
+	
+	private UserRepository userRepository;
+	
+	public AuthServiceImplement (UserRepository userRepository) {
+		this.userRepository = userRepository;
+	}
+	
+
+	@Override
+	public CheckIdResponseDto checkId(CheckIdRequestDto dto) {  // 로직이 구현
+		
+		CheckIdResponseDto result = new CheckIdResponseDto();
+		
+		try {
+			
+			String id = dto.getId();
+			
+			boolean existedId = userRepository.existsById(id);
+			
+			if (existedId) result.setCode(Code.DI);
+			else result.setCode(Code.SU);
+			
+		} catch (Exception exception) {
+			exception.printStackTrace();
+			result.setCode(Code.DBE);
+			
+		}
+		
+		return result;
+	}
+
+}

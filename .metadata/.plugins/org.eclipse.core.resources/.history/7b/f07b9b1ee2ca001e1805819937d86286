@@ -1,0 +1,5 @@
+package com.heesang.realEstate.dto.response;
+
+public class CheckIdReponseDto {
+
+}

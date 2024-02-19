@@ -1,0 +1,8 @@
+package com.heesang.realEstate.service;
+
+import com.heesang.realEstate.dto.request.CheckIdRequestDto;
+import com.heesang.realEstate.dto.response.CheckIdReponseDto;
+
+public interface AuthService {
+	CheckIdReponseDto checkId(CheckIdRequestDto dto);
+}

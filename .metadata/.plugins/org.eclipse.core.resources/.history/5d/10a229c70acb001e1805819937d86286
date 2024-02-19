@@ -1,0 +1,19 @@
+package com.heesang.realEstate.repository.Implement;
+
+import com.heesang.realEstate.repository.EmailAuthenticationRepository;
+
+public class EmailAuthenticationRepositoryImplement implements EmailAuthenticationRepository {
+
+	@Override
+	public boolean existsByEmail(String email) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void save(String eamil, String authenticationCode) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

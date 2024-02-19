@@ -1,0 +1,5 @@
+package com.heesang.realEstate.service;
+
+public interface AuthService {
+
+}

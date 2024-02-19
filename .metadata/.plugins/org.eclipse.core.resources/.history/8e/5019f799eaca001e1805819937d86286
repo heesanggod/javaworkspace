@@ -1,0 +1,15 @@
+package com.heesang.realEstate.service.Implement;
+
+import com.heesang.realEstate.dto.request.CheckIdRequestDto;
+import com.heesang.realEstate.dto.response.CheckIdReponseDto;
+import com.heesang.realEstate.service.AuthService;
+
+public class AuthServiceImplement implements AuthService {
+
+	@Override
+	public CheckIdReponseDto checkId(CheckIdRequestDto dto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

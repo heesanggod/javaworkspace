@@ -1,0 +1,5 @@
+package com.heesang.realEstate.repository;
+
+public interface EmailAuthenticationRepository {
+
+}

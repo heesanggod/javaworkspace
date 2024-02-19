@@ -1,0 +1,16 @@
+package com.heesang.realEstate.repository.Implement;
+
+import java.sql.Connection;
+
+import com.heesang.realEstate.repository.UserRepository;
+
+public class UserRepositoryImplement implements UserRepository {
+	
+	private Connection connection;
+
+	@Override
+	public boolean existsById(String id) {
+		return false;
+	}
+
+}

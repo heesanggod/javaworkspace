@@ -1,0 +1,40 @@
+package com.heesang.realEstate.repository.Implement;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+import com.heesang.realEstate.repository.EmailAuthenticationRepository;
+
+public class EmailAuthenticationRepositoryImplement implements EmailAuthenticationRepository {
+
+	private Connection connection;
+	
+	public EmailAuthenticationRepositoryImplement () {
+		try {
+			
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			
+			final String URL = "jdbc:mysql://127.0.0.1:3306/real_estate";
+			final String USENAME = "root";
+			final String USEPASSWORD = "root";
+			
+			this.connection = DriverManager.getConnection(URL, USENAME, USEPASSWORD);
+			
+		} catch (Exception exception) {
+			exception.printStackTrace();
+		}
+	}
+	
+	@Override
+	public boolean existsByEmail(String email) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void save(String eamil, String authenticationCode) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.heesang.realEstate.dto.request;
+
+public class SendCodeRequestDto {
+
+}

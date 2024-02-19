@@ -1,0 +1,25 @@
+package com.heesang.realEstate.service.Implement;
+
+import com.heesang.realEstate.dto.request.CheckIdRequestDto;
+import com.heesang.realEstate.dto.response.CheckIdReponseDto;
+import com.heesang.realEstate.service.AuthService;
+
+public class AuthServiceImplement implements AuthService {
+
+	@Override
+	public CheckIdReponseDto checkId(CheckIdRequestDto dto) {
+		
+		CheckIdReponseDto result = new CheckIdReponseDto();
+		
+		try {
+			
+		} catch (Exception exception) {
+			exception.printStackTrace();
+			result.setCode(Code.DBE);
+			
+		}
+		
+		return null;
+	}
+
+}

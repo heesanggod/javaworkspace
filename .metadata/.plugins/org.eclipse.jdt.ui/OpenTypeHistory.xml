@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=realEstate/src&lt;com.heesang.realEstate.controller{AuthController.java[AuthController" modifiers="513" timestamp="1707893746312"/>
+    <typeInfo handle="=realEstate/src&lt;com.heesang.realEstate.service{AuthService.java[AuthService" modifiers="513" timestamp="1707894431669"/>
+    <typeInfo handle="=realEstate/src&lt;com.heesang.realEstate.repository{UserRepository.java[UserRepository" modifiers="513" timestamp="1707887900804"/>
+    <typeInfo handle="=realEstate/C:\/Users\/ITPS\/.p2\/pool\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858\/jre\/lib\/jrt-fs.jar`java.base=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/17\/docs\/api\/=/=/module=/true=/&lt;java.nio.file.attribute(UserDefinedFileAttributeView.class[UserDefinedFileAttributeView" modifiers="1537" timestamp="1698451290000"/>
+    <typeInfo handle="=realEstate/src&lt;com.heesang.realEstate.repository{EmailAuthenticationRepository.java[EmailAuthenticationRepository" modifiers="513" timestamp="1707895893048"/>
+</typeInfoHistroy>

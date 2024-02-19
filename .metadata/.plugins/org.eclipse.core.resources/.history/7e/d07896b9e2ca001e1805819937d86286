@@ -1,0 +1,5 @@
+package com.heesang.realEstate.interfaces;
+
+public enum Code {
+
+}
